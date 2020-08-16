@@ -30,6 +30,11 @@
     <h3>Interactivity</h3>
     <button v-on:click="reverseMessage" v-bind:title="title">{{ message }}</button>
   </div>
+  <div id="app-6">
+    <h3>Forms</h3>
+    <p>Message: {{ message }} </p>
+    <label for="message-input">Update message:</label>
+    <input v-model="message" name="message-input" placeholder="New message">
   <script src="main.js"></script>
 </body>
 </html>
