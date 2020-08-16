@@ -17,4 +17,15 @@ var app3 = new Vue({
   data: {
     seen: true
   }
+});
+
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todoList: [
+      { text: 'Learn Vue'},
+      { text: 'Learn GraphQL'},
+      { text: 'Build something awesome'}
+    ]
+  }
 })

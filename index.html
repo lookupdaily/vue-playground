@@ -8,7 +8,7 @@
 </head>
 <body>
   <div id="app">
-    {{ message }}
+    <h1>{{ message }}</h1>
   </div>
   <div id="app-2">
     <span v-bind:title="message">
@@ -17,6 +17,14 @@
   </div>
   <div id="app-3">
     <span v-if="seen">Now you see me</span>
+  </div>
+  <div id="app-4">
+    <h3>To Do List</h3>
+    <ol>
+      <li v-for="todo in todoList">
+        {{ todo.text }}
+      </li>
+    </ol>
   </div>
   <script src="main.js"></script>
 </body>
